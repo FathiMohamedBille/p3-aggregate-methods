@@ -34,7 +34,7 @@ class Course:
 class Enrollment:
     all = []
     
-    def __init__(self, student, course):
+def __init__(self, student, course):
         if isinstance(student, Student) and isinstance(course, Course):
             self.student = student
             self.course = course
@@ -43,5 +43,5 @@ class Enrollment:
         else:
             raise TypeError("Invalid types for student and/or course")
 
-    def get_enrollment_date(self):
+def get_enrollment_date(self):
         return self._enrollment_date
